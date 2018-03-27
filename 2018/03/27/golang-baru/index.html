@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Go-lang | @irsyadrdp&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Go atau biasa disebut GoLang (Go Language) merupakan salah satu bahasa pemrograman yang dikembangkan oleh Google dan sangat mudah dipakai untuk membuat aplikasi yang simple, reliable &amp;amp; efficient">
+<meta name="keywords" content="go,golang">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Go-lang">
+<meta property="og:url" content="http://irsyadrdp.github.io/2018/03/27/golang-baru/index.html">
+<meta property="og:site_name" content="@irsyadrdp&#39;s blog">
+<meta property="og:description" content="Go atau biasa disebut GoLang (Go Language) merupakan salah satu bahasa pemrograman yang dikembangkan oleh Google dan sangat mudah dipakai untuk membuat aplikasi yang simple, reliable &amp;amp; efficient">
+<meta property="og:image" content="https://gorealize.io/img/logo.png">
+<meta property="og:updated_time" content="2018-03-27T13:35:09.139Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Go-lang">
+<meta name="twitter:description" content="Go atau biasa disebut GoLang (Go Language) merupakan salah satu bahasa pemrograman yang dikembangkan oleh Google dan sangat mudah dipakai untuk membuat aplikasi yang simple, reliable &amp;amp; efficient">
+<meta name="twitter:image" content="https://gorealize.io/img/logo.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/logo.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">@irsyadrdp&#39;s blog</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/logo.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/logo.png" />
+            <h2 id="name">Irsyad Riandri Dana Prawira</h2>
+            <h3 id="title">Web Developer, Freelance Music Producer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Bandung, Indonesia</span>
+            <a id="follow" target="_blank" href="https://github.com/irsyadrdp/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                5
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                3
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/irsyadrdp" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-golang-baru" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Go-lang
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/03/27/golang-baru/">
+            <time datetime="2018-03-27T11:55:44.398Z" itemprop="datePublished">2018-03-27</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/programming/">programming</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/go/">go</a>, <a class="tag-link" href="/tags/golang/">golang</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <hr>
+<p><img src="https://blog.newrelic.com/wp-content/uploads/golang-gopher.jpg" alt=""></p>
+<p>Go atau biasa disebut <a href="https://golang.org/" target="_blank" rel="noopener">GoLang</a> (<em>Go Language</em>) merupakan salah satu bahasa pemrograman yang dikembangkan oleh <a href="https://google.com/" target="_blank" rel="noopener">Google</a> dan sangat mudah dipakai untuk membuat aplikasi yang <em>simple, reliable &amp; efficient</em>. Bahasa ini dibuat oleh <a href="https://en.wikipedia.org/wiki/Robert_Griesemer" target="_blank" rel="noopener">Robert Griesemer</a>, <a href="https://en.wikipedia.org/wiki/Rob_Pike" target="_blank" rel="noopener">Rob Pike</a>, dan <a href="https://en.wikipedia.org/wiki/Ken_Thompson_" target="_blank" rel="noopener">Ken Thompson</a> pada tahun 2007. Bahasa ini dikembangkan selama kurang lebih 2 tahun, dan mulai dirilis pada tahun 2009.</p>
+<a id="more"></a>
+<p>Bahasa Go diciptakan untuk membuat suatu bahasa pemrograman yang mendukud <em>type safety</em> dan <em>portability</em>. Selain itu bahasa ini pun memiliki beberapa keuntungan.</p>
+<h3 id="1-Keuntungan-Bahasa-Go"><a href="#1-Keuntungan-Bahasa-Go" class="headerlink" title="1. Keuntungan Bahasa Go"></a>1. Keuntungan Bahasa Go</h3><ul>
+<li><p><em>Compiled Language</em><br>Compiled language dikenal dengan kecepatannya, karena akan dikonversi langsung kedalam level mesin.</p>
+</li>
+<li><p><em>Go Compiler</em><br>Go memiliki <em>compiler</em> sendiri yang dapat melakukan pengecekkan error , kemudahan deployment dan kemampuan untuk mengoptimasi kode.</p>
+</li>
+<li><p><em>Error Checking</em><br>Apabila terdapat suatu variabel yang tidak digunakkan, <em>packages</em> yang hilang, atau typo, maka Go Compiler akan secara otomatis mendeteksinya sebagai error, sehingga kode yang kita buat akan lebih efisien.</p>
+</li>
+<li><p><em>Cross Compiling</em><br>Bahasa Go mendukung cross-compile sehingga aplikasi yang kita buat dapat berjalan di mesin yang berbeda. Go Compiler bisa memungkinkan user untuk membuat <em>executable binaries</em> untuk sistem operasi yang berbeda. </p>
+</li>
+<li><p><em>Garbage Collection</em><br>Bahasa Go mendukung menajemen memori secara otomatis, sehingga dapat memberikan akses penuh dalam pengaturan <em>memory allocation</em>, sehingga dapat memperkecil latency hingga 1ms. </p>
+</li>
+<li><p><em>Scalability</em><br>Karena Go dikembangkan oleh Google, maka bahasa ini di desain untuk mendukung skalabilitas. Go memiliki <em>built-in features</em> untuk menangani <em>concurency</em>, melalui fungsi Goroutines dan Channel. Fungsi ini mampu menjalankan beberapa fungsi secara bersamaan. Sedangkan Channel memungkinkan adanya komunikasi antar sesama untuk mencari tahu cara terbaik dalam menyelesaikan suatu pekerjaan. </p>
+</li>
+<li><p><em>Simplicity</em><br>Go dibuat untuk mendukung kesederhanaan dan kemudahan untuk dipahami, baik dalam pembacaan maupun penulisan kode.</p>
+</li>
+</ul>
+<h3 id="2-Contoh-Syntax"><a href="#2-Contoh-Syntax" class="headerlink" title="2. Contoh Syntax"></a>2. Contoh Syntax</h3><p>Bahasa Go tidak mengharuskan penggunaan titik koma (;) di setiap akhir baris kode. Berikut ini beberapa syntax dalam penulisan kode bahasa Go.</p>
+<h4 id="Deklarasi-variabel"><a href="#Deklarasi-variabel" class="headerlink" title="Deklarasi variabel"></a>Deklarasi variabel</h4><p>Dalam melakukan deklarasi variabel di bahasa Go, terdapat beberapa cara.</p>
+<pre><code>1. Deklarasi dengan diikuti tipe variabel
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var kata string = &quot;Halo&quot;</span><br></pre></td></tr></table></figure>
+
+2. Deklarasi tanpa tipe variabel
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kata := &quot;Halo&quot;</span><br></pre></td></tr></table></figure>
+</code></pre><p>Dalam bahasa Go tidak memiliki properti <strong>Public/Private</strong>. Yang membedakan Public/Private di bahasa Go adalah awal kata dari nama variabel atau function dalam bahasa Go. Jika huruf awal huruf merupakan huruf besar, maka otomatis akan menjadi Public. Namun jika awal huruf merupakan huruf kecil, maka otomatis akan menjadi Private.</p>
+<h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h4><p>Dalam membuat contoh kodingan “Hello World” dalam bahasa Go, bisa menggunakan kode di bawah ini.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	fmt.Println(&quot;Hello World&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Penggunaan-Function"><a href="#Penggunaan-Function" class="headerlink" title="Penggunaan Function"></a>Penggunaan Function</h4><p>Dalam bahasa Go tidak mengenal fitur class, overloading maupun inheritance. Namun bahasa ini merupakan bahasa pemrograman <em>procedural</em>, sehingga banyak menggunakan function. Berikut contoh penggunaan function di Go.</p>
+<p><em>file: main.go</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line">import &quot;github.com/hello-world/helper&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	//calculate helper function</span><br><span class="line">	penjumlahan, perkalian := helper.Calculate2(3, 4)</span><br><span class="line">	fmt.Println(a, b)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><em>file dalam folder: github.com/hello-world/helper/calculate.go</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">func Calculate1(a, b int) (int, int) &#123;</span><br><span class="line">	sum := a + b</span><br><span class="line">	prod := a * b</span><br><span class="line">	return sum, prod</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="Contoh-Rest-API-di-Go"><a href="#Contoh-Rest-API-di-Go" class="headerlink" title="Contoh Rest API di Go"></a>Contoh Rest API di Go</h4><p>Berikut ini contoh rest API di bahasa Go</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;encoding/json&quot;</span><br><span class="line">	&quot;github.com/gorilla/mux&quot;</span><br><span class="line">	&quot;log&quot;</span><br><span class="line">	&quot;net/http&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">type Person struct &#123;</span><br><span class="line">	ID        string   `json:&quot;id, omitempty&quot;`</span><br><span class="line">	Firstname string   `json:&quot;firstname, omitempty&quot;`</span><br><span class="line">	Lastname  string   `json:&quot;lastname, omitempty&quot;`</span><br><span class="line">	Address   *Address `json:&quot;address, omitempty&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type Address struct &#123;</span><br><span class="line">	City  string `json:&quot;city, omitempty&quot;`</span><br><span class="line">	State string `json:&quot;state, omitempty&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var people []Person</span><br><span class="line"></span><br><span class="line">func GetPeople(w http.ResponseWriter, r *http.Request) &#123;</span><br><span class="line">	json.NewEncoder(w).Encode(people) //get data</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func GetPerson(w http.ResponseWriter, r *http.Request) &#123;</span><br><span class="line">	params := mux.Vars(r)</span><br><span class="line">	for _, item := range people &#123;</span><br><span class="line">		if item.ID == params[&quot;id&quot;] &#123;</span><br><span class="line">			json.NewEncoder(w).Encode(item)</span><br><span class="line">			return</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	json.NewEncoder(w).Encode(&amp;Person&#123;&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func CreatePerson(w http.ResponseWriter, r *http.Request) &#123;</span><br><span class="line">	params := mux.Vars(r)</span><br><span class="line">	var person Person</span><br><span class="line">	_ = json.NewDecoder(r.Body).Decode(&amp;person)</span><br><span class="line">	person.ID = params[&quot;id&quot;]</span><br><span class="line">	people = append(people, person)</span><br><span class="line">	json.NewEncoder(w).Encode(people)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func DeletePerson(w http.ResponseWriter, r *http.Request) &#123;</span><br><span class="line">	params := mux.Vars(r)</span><br><span class="line">	for index, item := range people &#123;</span><br><span class="line">		if item.ID == params[&quot;id&quot;] &#123;</span><br><span class="line">			people = append(people[:index], people[index+1])</span><br><span class="line">			break</span><br><span class="line">		&#125;</span><br><span class="line">		json.NewEncoder(w).Encode(people)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	router := mux.NewRouter()</span><br><span class="line"></span><br><span class="line">	people = append(people, Person&#123;ID: &quot;1&quot;, Firstname: &quot;John&quot;, Lastname: &quot;Doe&quot;, Address: &amp;Address&#123;City: &quot;City X&quot;, State: &quot;State X&quot;&#125;&#125;)</span><br><span class="line">	people = append(people, Person&#123;ID: &quot;2&quot;, Firstname: &quot;Koko&quot;, Lastname: &quot;Doe&quot;, Address: &amp;Address&#123;City: &quot;City Z&quot;, State: &quot;State Y&quot;&#125;&#125;)</span><br><span class="line">	people = append(people, Person&#123;ID: &quot;3&quot;, Firstname: &quot;Francis&quot;, Lastname: &quot;Sunday&quot;&#125;)</span><br><span class="line"></span><br><span class="line">	router.HandleFunc(&quot;/people&quot;, GetPeople).Methods(&quot;GET&quot;)</span><br><span class="line">	router.HandleFunc(&quot;/people/&#123;id&#125;&quot;, GetPerson).Methods(&quot;GET&quot;)</span><br><span class="line">	router.HandleFunc(&quot;/create/&#123;id&#125;&quot;, CreatePerson).Methods(&quot;POST&quot;)</span><br><span class="line">	router.HandleFunc(&quot;/delete/&#123;id&#125;&quot;, DeletePerson).Methods(&quot;DELETE&quot;)</span><br><span class="line"></span><br><span class="line">	log.Fatal(http.ListenAndServe(&quot;:8000&quot;, router))</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Contoh-Penerapan-Test-Driven-Development-di-Go"><a href="#Contoh-Penerapan-Test-Driven-Development-di-Go" class="headerlink" title="Contoh Penerapan Test Driven Development di Go"></a>Contoh Penerapan Test Driven Development di Go</h4><p>Berikut ini contoh TDD di bahasa Go</p>
+<p><em>file: main.go</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	a := Add(2, 3)</span><br><span class="line">	fmt.Println(a)</span><br><span class="line"></span><br><span class="line">	arr := []int&#123;1,2,3,4&#125;</span><br><span class="line">	b := AddMultiple(arr)</span><br><span class="line">	fmt.Println(b)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func Add(a, b int) int &#123;</span><br><span class="line">	return a + b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func AddMultiple(n []int) int &#123;</span><br><span class="line">	if len(n) == 0&#123;</span><br><span class="line">		return 0</span><br><span class="line">	&#125;</span><br><span class="line">	sum := 0</span><br><span class="line">	for _, item := range n &#123;</span><br><span class="line">		sum+=item</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	return sum</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><em>file: main_test.go</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">//run package test | run file test</span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;testing&quot;</span><br><span class="line"></span><br><span class="line">//run test | debug test</span><br><span class="line">func TestAddInit(t *testing.T) &#123;</span><br><span class="line">	t.Log(&quot;Success&quot;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func TestAddTwoNumbers(t *testing.T) &#123;</span><br><span class="line">	result := Add(2, 3)</span><br><span class="line">	if result != 5 &#123;</span><br><span class="line">		t.Error(&quot;Failed to add two numbers&quot;)</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		t.Log(&quot;Success&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func TestAddMultipleNumbers(t *testing.T) &#123;</span><br><span class="line">	arr := []int&#123;1,2,3,4&#125;</span><br><span class="line">	result := AddMultiple(arr)</span><br><span class="line">	if result != 10 &#123;</span><br><span class="line">		t.Error(&quot;Failed to add two numbers&quot;)</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		t.Log(&quot;Success&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func TestAddNullParameter(t *testing.T)&#123;</span><br><span class="line">	result := AddMultiple([]int&#123;&#125;)</span><br><span class="line">	if result != 0&#123;</span><br><span class="line">		t.Error(&quot;Failed&quot;)</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		t.Log(&quot;Success&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">go test --cover</span><br><span class="line">go test -coverprofile=coverage.out </span><br><span class="line">go tool cover -html=coverage.out</span><br><span class="line">*/</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">Cara untuk melakukan eksekusi TDD di Go</span><br></pre></td></tr></table></figure></p>
+<p>go test –cover<br>go test -coverprofile=coverage.out<br>go tool cover -html=coverage.out<br><code></code> </p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://irsyadrdp.github.io/2018/03/27/golang-baru/" data-id="cjf9lz2hl0000esn6i3jhj8ad" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://irsyadrdp.github.io/2018/03/27/golang-baru/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://irsyadrdp.github.io/2018/03/27/golang-baru/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/03/25/ragu/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Apakah saya sudah cukup baik untuk dikatakan sebagai Developer?</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/27/golang-baru/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://gorealize.io/img/logo.png)" alt="Go-lang" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/programming/">programming</a></p>
+                            <p class="item-title"><a href="/2018/03/27/golang-baru/" class="title">Go-lang</a></p>
+                            <p class="item-date"><time datetime="2018-03-27T11:55:44.398Z" itemprop="datePublished">2018-03-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/25/ragu/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://blogs.psychcentral.com/mentoring-recovery/files/2012/07/doubt_dice.jpg)" alt="Apakah saya sudah cukup baik untuk dikatakan sebagai Developer?" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/developer/">developer</a></p>
+                            <p class="item-title"><a href="/2018/03/25/ragu/" class="title">Apakah saya sudah cukup baik untuk dikatakan sebagai Developer?</a></p>
+                            <p class="item-date"><time datetime="2018-03-25T07:12:27.406Z" itemprop="datePublished">2018-03-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/12/WebDev-2018/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/03/12/WebDev-2018/" class="title">Top Trends in Web Dev 2018</a></p>
+                            <p class="item-date"><time datetime="2018-03-12T01:57:01.580Z" itemprop="datePublished">2018-03-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/09/git-panduan/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/03/09/git-panduan/" class="title">git - Panduan Sederhana</a></p>
+                            <p class="item-date"><time datetime="2018-03-08T21:07:15.937Z" itemprop="datePublished">2018-03-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/08/blog-pertama/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/03/08/blog-pertama/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2018-03-08T07:52:57.669Z" itemprop="datePublished">2018-03-08</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/developer/">developer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/developer/">developer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/go/">go</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/golang/">golang</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/developer/" style="font-size: 10px;">developer</a> <a href="/tags/go/" style="font-size: 10px;">go</a> <a href="/tags/golang/" style="font-size: 10px;">golang</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Irsyad Riandri Dana Prawira<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://irsyadrdp.github.io/2018/03/27/golang-baru/';
+        
+        this.page.identifier = 'golang-baru';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
